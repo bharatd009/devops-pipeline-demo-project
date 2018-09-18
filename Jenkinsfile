@@ -60,10 +60,10 @@ pipeline {
           env.rancherHeaders = '-H "Content-Type: application/json" -X POST'
 
           env.rancherJSONFrontend = '{"push_data":{"tag":"latest"},"repository":{"repo_name":"swapnil1992/votingapp_frontend"}}'
-          env.rancherURLFrontend = 'http://192.168.50.4:8080/v1-webhooks/endpoint?key=gQBsgtAHiZ3N4mXm5rlhFGHsJViTjPiGeDLCkFKB&projectId=1a5'
+           env.rancherURLFrontend = 'http://172.25.18.132:8081/v1-webhooks/endpoint?key=O2L1HEDlMaS70kKI1ZbUxxhVzgo5ZW3LmJAGJMJI&projectId=1a5'
 
           env.rancherJSONBackend = '{"push_data":{"tag":"latest"},"repository":{"repo_name":"swapnil1992/votingapp_backend"}}'
-          env.rancherURLBackend = 'http://192.168.50.4:8080/v1-webhooks/endpoint?key=8a6GEcMVWc5BOPxSo38mcURy8Hho08boKZYkbl9t&projectId=1a5'
+           env.rancherURLBackend = 'http://172.25.18.132:8081/v1-webhooks/endpoint?key=hI9cIQO8TMYNczkgLa49f9DR07RDCv2KzTwYYOW8&projectId=1a5'
         }
 
         sh "curl ${env.rancherHeaders} -d '${env.rancherJSONFrontend}' '${env.rancherURLFrontend}'"
