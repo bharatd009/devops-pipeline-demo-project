@@ -59,10 +59,10 @@ pipeline {
         script {
           env.rancherHeaders = '-H "Content-Type: application/json" -X POST'
 
-          env.rancherJSONFrontend = '{"push_data":{"tag":"latest"},"repository":{"repo_name":"allhaker/votingapp_frontend"}}'
+          env.rancherJSONFrontend = '{"push_data":{"tag":"latest"},"repository":{"repo_name":"swapnil1992/votingapp_frontend"}}'
           env.rancherURLFrontend = 'http://192.168.50.4:8080/v1-webhooks/endpoint?key=gQBsgtAHiZ3N4mXm5rlhFGHsJViTjPiGeDLCkFKB&projectId=1a5'
 
-          env.rancherJSONBackend = '{"push_data":{"tag":"latest"},"repository":{"repo_name":"allhaker/votingapp_backend"}}'
+          env.rancherJSONBackend = '{"push_data":{"tag":"latest"},"repository":{"repo_name":"swapnil1992/votingapp_backend"}}'
           env.rancherURLBackend = 'http://192.168.50.4:8080/v1-webhooks/endpoint?key=8a6GEcMVWc5BOPxSo38mcURy8Hho08boKZYkbl9t&projectId=1a5'
         }
 
