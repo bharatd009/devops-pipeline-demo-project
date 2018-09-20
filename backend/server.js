@@ -5,7 +5,7 @@ var database = require('./lib/database');
 
 var cluster = require('cluster');
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8030;
 var workers = require('os').cpus().length;
 
 database.sync().then(function() {
