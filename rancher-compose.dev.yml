@@ -11,7 +11,7 @@ services:
         protocol: http
         service: backend
         source_port: 80
-        target_port: 8080
+        target_port: 8030
       - path: /
         priority: 2
         protocol: http
@@ -33,7 +33,7 @@ services:
     health_check:
       healthy_threshold: 2
       response_timeout: 2000
-      port: 8080
+      port: 8030
       unhealthy_threshold: 3
       initializing_timeout: 20000
       interval: 2000
