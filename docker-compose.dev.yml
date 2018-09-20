@@ -9,7 +9,7 @@ services:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
   seed-db:
-    image: swapnil1992/votingapp_backend:development
+    image: allhaker/votingapp_backend:development
     environment:
       DATABASE_URL: postgres://votingapp:votingapp@db/votingapp
     links:
@@ -32,7 +32,7 @@ services:
   frontend:
     image: swapnil1992/votingapp_frontend
     command:
-    - npm
+    - npmswapnil1992
     - run
     - serve
     labels:
