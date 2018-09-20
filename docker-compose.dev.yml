@@ -20,7 +20,7 @@ services:
     labels:
       io.rancher.container.start_once: 'true'
   backend:
-    image: allhaker/votingapp_backend
+    image: swapnil1992/votingapp_backend
     environment:
       DATABASE_URL: postgres://votingapp:votingapp@db/votingapp
     links:
